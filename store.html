@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="slastband.css">
+    <a href="index.html" target="_blank"></a>
+    
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="title"><a href="index.html">THE 1975</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#m">Our Members</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="about.html">About Us</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <main>
+        <section class="products">
+            <div class="product">
+                <img src="biru.webp" alt="Product 1">
+                <p>Logo Distressed Blue Hoodie</p>
+                <p>Price: $79.05</p>
+                <button class="add-to-cart" data-name="Product 1" data-price="79.05">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="putih.webp" alt="Product 2">
+                <p>Logo Distressed White Crewneck</p>
+                <p>Price: $77.05</p>
+                <button class="add-to-cart" data-name="Product 2" data-price="77.05">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img src="1975_SPRING_SKATEDECK_FRONT.webp" alt="Product 3">
+              <p>Logo Skate Deck</p>
+              <p>Price: $85.00</p>
+              <button class="add-to-cart" data-name="Product 3" data-price="85.00">Add to Cart</button>
+          </div>
+          <div class="product">
+              <img src="1975_SPRING_WHITEWATERBOTTLE_FRONT.webp" alt="Product 4">
+              <p>Logo Water Bottle</p>
+              <p>Price: $35.00</p>
+              <button class="add-to-cart" data-name="Product 4" data-price="35.00">Add to Cart</button>
+          </div>
+          <div class="product">
+              <img src="not.webp" alt="Product 5">
+              <p>Logo Water Bottle</p>
+              <p>Price: $40.00</p>
+              <button class="add-to-cart" data-name="Product 5" data-price="40.00">Add to Cart</button>
+          </div>
+          
+        </section>
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;The 1975 Official.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
